@@ -70,7 +70,8 @@ h2{
 /* Mobile styles */
 .grid{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);  
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;  
 }
 .site-nav{
     margin: 0 20px;
@@ -85,7 +86,7 @@ h2{
     border-bottom: 3px solid var(--primary);
 }
 #welcome{
-
+ padding: 0 20px 20px 20px ;
 }
 .welcome-text{
     grid-column: 1/6;
@@ -99,9 +100,6 @@ h2{
 .welcome-text a{
     margin: 20px 0;
 }
-section{
-      padding-top: 0;
-  }
 #portfolio{
 background: url('assets/square_bg.png');
 background-repeat: no-repeat;
@@ -113,6 +111,59 @@ padding: 30px 20px;
     margin-bottom: 0;
     text-align: center;
 }
+
+#portfolio a{
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+}
+
+.projects a *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+}
+.projects h4{
+    color: #9994f7;
+}
+
+#skills{
+    padding: 30px 20px;
+    background: #07083E;
+}
+#skills h3{
+    text-align: center;
+}
+#skills ul{
+    margin: 40px 0;
+}
+#skills li{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    grid: span 4;
+}
+#skils img{
+    height: 80px;
+    margin: 10px auto;
+}
+
+
+#contact{
+    padding: 30px 20px;
+    background: #080936;
+}
+#contact form{
+width: 80%;
+max-width: 400px;
+margin: 20px auto;
+text-align: center;
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    margin: 100%;
+}
+
 
 /* small Tablets Styles*/
 @media screen and (min-width: 620px){
@@ -142,7 +193,6 @@ padding: 30px 20px;
 
 .projects a{
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.788);
     padding: 20px;
 }
 
