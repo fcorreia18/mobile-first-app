@@ -63,9 +63,56 @@ h2{
 h2{
     font-size: 1.1em;
 }
+.leading{
+    font-weight: 1.1em;
+}
 
 /* Mobile styles */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);  
+}
+.site-nav{
+    margin: 0 20px;
+}
+.site-nav ul{
+    display: none;
+}
+.site-nav h1{
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary);
+}
+#welcome{
 
+}
+.welcome-text{
+    grid-column: 1/6;
+}
+.welcome-img {
+    grid-column: 6/9;
+}
+.welcome-img img{
+    width: 200%;
+}
+.welcome-text a{
+    margin: 20px 0;
+}
+section{
+      padding-top: 0;
+  }
+#portfolio{
+background: url('assets/square_bg.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+padding: 30px 20px;
+  }
+#protfolio h3{
+    margin-bottom: 0;
+    text-align: center;
+}
 
 /* small Tablets Styles*/
 @media screen and (min-width: 620px){
@@ -85,3 +132,35 @@ h2{
         font-size: 20px;
     }  
 }
+
+/* grid testing*/
+.projects{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.projects a{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.788);
+    padding: 20px;
+}
+
+.projects img{
+    max-width: 100%;
+}
+.projects a:nth-child(1){
+    grid-column: 2/6;
+    grid-rows: 1;
+}
+
+.projects a:nth-child(2){
+    grid-column: 8/12;
+    grid-rows: 1;
+}
+
+.projects a:nth-child(3){
+    grid-column: 5/9;
+    grid-rows: 2;
+}
+
